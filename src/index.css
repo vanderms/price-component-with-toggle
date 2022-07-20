@@ -11,6 +11,18 @@
     --primary: #6d72de;
     --gradient: linear-gradient(135.06deg, #a2a7f0 -0.05%, #696edd 100.05%);
     --shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    --surface: #fff;
+    --neutral-500-semi-translucid: #6e728e40;
+  }
+
+  .emphasis {
+    --primary: #fff;
+    --neutral-50: #6d72de;
+    --neutral-500: #fff;
+    --neutral-800: #fff;
+    --surface: linear-gradient(135.06deg, #a2a7f0 -0.05%, #696edd 100.05%);
+    --neutral-500-semi-translucid: #ffffff40;
+    --gradient: #fff;
   }
 
   html {
@@ -25,5 +37,30 @@
     line-height: 2.4375rem;
   }
 
-  
+  .bg-patterns::before {
+    @apply absolute block bg-center bg-no-repeat bg-contain;
+    content: "";
+    background-image: url(/bg-top.svg);
+    width: 23.4375rem;
+    height: 41.125rem;
+    top: -2.25rem;
+    right: -12.1875rem;
+  }
+
+  @media screen(lg) {
+    .bg-patterns::before {
+      top: 0;
+      right: 0;
+    }
+
+    .bg-patterns::after {
+      @apply absolute block bg-center bg-no-repeat bg-contain;
+      content: "";
+      background-image: url(/bg-bottom.svg);
+      width: 22.0625rem;
+      height: 19rem;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }

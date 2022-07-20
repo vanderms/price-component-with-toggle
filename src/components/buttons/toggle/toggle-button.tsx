@@ -1,5 +1,5 @@
 import { ChangeEvent } from "react";
-import { Period } from "@/services/price";
+import { Period } from "@/services/plans";
 
 interface ToggleButtonProps {
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;

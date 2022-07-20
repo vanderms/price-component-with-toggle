@@ -12,7 +12,8 @@ module.exports = {
         [ "neutral-500" ]: "var(--neutral-500)",
         [ "neutral-800" ]: "var(--neutral-800)",
         [ "primary" ]: "var(--primary)",
-        [ "gradient" ]: "var(--gradient)"
+        [ "gradient" ]: "var(--gradient)",
+        [ 'neutral-500-semi-translucid' ]: "var(--neutral-500-semi-translucid)"
       }
 
     },
