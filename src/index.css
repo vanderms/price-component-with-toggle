@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neutral-50: #fff;
+    --neutral-200: #f7f7fe;
+    --neutral-500: #6e728e;
+    --neutral-800: #4a4d60;
+    --primary: #6d72de;
+    --gradient: linear-gradient(135.06deg, #a2a7f0 -0.05%, #696edd 100.05%);
+    --shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+  }
+
+  html {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer components {
+  .title-lg {
+    font-size: 2rem;
+    line-height: 2.4375rem;
+  }
+
+  
+}
