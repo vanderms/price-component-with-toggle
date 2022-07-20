@@ -17,7 +17,6 @@ export const ToggleButton: React.FC<ToggleButtonProps> = ({ handleChange, period
           name="period"
           checked={period === Period.annually}
           value={Period.annually}
-          id=""
           className="appearance-none"
         />
       </label>
@@ -28,7 +27,6 @@ export const ToggleButton: React.FC<ToggleButtonProps> = ({ handleChange, period
           name="period"
           checked={period === Period.monthly}
           value={Period.monthly}
-          id=""
           className="appearance-none"
         />
         <span className="text-[0.9375rem] text-neutral-500 "> Monthly</span>
